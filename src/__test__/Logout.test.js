@@ -9,7 +9,7 @@ jest.mock('react-router-dom', () => ({
 }));
 
 describe('Logout Component', () => {
-
+let navigate;
 
   beforeEach(() => {
     navigate = jest.fn();

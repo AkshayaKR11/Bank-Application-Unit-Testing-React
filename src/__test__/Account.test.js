@@ -18,7 +18,7 @@ jest.mock()
 
 
 describe('Account Component', () => {
-
+  let navigate;
   beforeEach(() => {
     navigate = jest.fn();
     require('react-router-dom').useNavigate.mockReturnValue(navigate);

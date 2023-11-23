@@ -6,7 +6,7 @@ import { customerService } from '../apiUrls';
 
 jest.mock('../apiUrls');
 
-describe('TransactionDownload Component', () => {
+describe('TransactionDownload Component',() => {
   it('renders the form correctly', () => {
     render(
       <MemoryRouter>

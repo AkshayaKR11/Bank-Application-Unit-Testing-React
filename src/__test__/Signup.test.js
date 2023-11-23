@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Signup from '../Signup';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter,navigate,useNavigate} from 'react-router-dom';
 import { customerService } from '../apiUrls';
 
 jest.mock('../apiUrls', () => ({
@@ -17,12 +17,13 @@ jest.mock('react-router-dom', () => ({
 }));
 
 describe('Signup Component', () => {
+  let navigate;
   beforeEach(() => {
     jest.clearAllMocks();
   });
   beforeEach(() => {
     navigate = jest.fn();
-    require('react-router-dom').useNavigate.mockReturnValue(navigate);
+    useNavigate.mockReturnValue(navigate);
   });
 
   it('renders Signup form correctly', () => {

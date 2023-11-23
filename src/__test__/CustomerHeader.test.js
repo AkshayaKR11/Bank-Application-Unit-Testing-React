@@ -26,6 +26,6 @@ describe('CustomerHeader component', () => {
       </BrowserRouter>
     );
     const buttons = screen.getAllByRole('button');
-    expect(buttons.length).toBe(6); 
+    expect(buttons.length).toBe(6);
   });
 });

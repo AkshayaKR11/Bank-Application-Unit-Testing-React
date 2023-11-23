@@ -16,6 +16,7 @@ jest.mock('react-router-dom', () => ({
 }));
 
 describe('LoginPage Component', () => {
+  let navigate;
   beforeEach(() => {
     jest.clearAllMocks();
   });

@@ -23,6 +23,6 @@ describe('HomeHeader Component', () => {
       </MemoryRouter>
     );
     const buttons = screen.getAllByRole('button');
-    expect(buttons.length).toBe(4); 
+    expect(buttons.length).toBe(4);
   });
 });

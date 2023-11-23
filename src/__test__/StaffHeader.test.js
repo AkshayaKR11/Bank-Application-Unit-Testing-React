@@ -28,6 +28,6 @@ describe('StaffHeader component', () => {
     );
 
     const buttons = screen.getAllByRole('button');
-    expect(buttons.length).toBe(7); 
+    expect(buttons.length).toBe(7);
   });
 });
